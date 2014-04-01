@@ -1,29 +1,23 @@
-# PrimeApp
+# Prime Finder App!
 
-TODO: Write a gem description
-
-## Installation
-
-Add this line to your application's Gemfile:
-
-    gem 'prime_app'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install prime_app
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+    This app prints a multiplication table of the first N
+    prime numbers. The ﬁrst row and column of the table has 
+    the N primes, with each cell containing the product of 
+    the primes for the corresponding row and column.
+    
+    To use this app, simply run the script with a single
+    integer as the argument.
+    
+    If run without any arguments, a default value of 10
+    will be used.
+    
+    Example Usage:
+    
+      ruby ./lib/prime_app.rb 3
+    
+    Will Return:
+    
+      1,2,3,5
+      2,4,6,10
+      3,6,9,15
+      5,10,15,25

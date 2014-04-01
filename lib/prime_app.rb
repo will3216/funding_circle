@@ -19,11 +19,11 @@ module PrimeApp
   
   if ARGV.include? '--help' 
     print_help
+  elsif ARGV.first.nil?
+    PrimeFinder.new.find_and_print
   elsif ARGV.first.to_i == 0
     puts "Error: #{ARGV.first} is an invalid argument."
     print_help
-  elsif ARGV.first.nil?
-    PrimeFinder.new.find_and_print
   else
     PrimeFinder.new(ARGV.first.to_i).find_and_print
   end
